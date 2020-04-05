@@ -1,0 +1,100 @@
+//main: ../style.css
+.signup{
+    padding-top: 110px;
+    padding-bottom: 35px;
+    background: url("../images/columns.jpg") center, no-repeat;
+
+    @media @mobile{
+        padding-top: 30px;
+    }
+}
+
+.signup__header{
+    text-align: center;
+}
+
+.signup__title{
+    color: #212f3d;
+    font-size: 48px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin-bottom:35px;
+
+    @media @mobile{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.signup__subtitle{
+    font-family: 'Avenir Next Cyr Medium';
+    font-size: 20px;
+    color: #212f3d;
+
+    margin-bottom: 65px;
+
+    @media @mobile{
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+}
+
+.signup__form{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.signup__input{
+    margin-right: 25px;
+
+    width: 100%;
+    max-width: 360px;
+    height: 65px;
+    border: none;
+
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Regular';
+    color: #6e837f;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    @media @tablet{
+        max-width: 300px;
+    }
+
+    @media @mobile{
+        margin-bottom: 20px;
+        margin-right: 0;
+        height: 50px;
+    }
+
+    @media @mobile-sm{
+        max-width: 250px;
+    }
+
+}
+
+.signup__info{
+    color: #788a86;
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Regular';
+    text-align:center;
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    & span {
+        text-decoration: underline;
+    }
+
+}
+
+.signup__helper{
+    display:flex;
+    justify-content: center;
+}

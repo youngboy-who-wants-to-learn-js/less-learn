@@ -1,0 +1,86 @@
+//main: ../style.css
+
+
+
+.pros__bg{
+    padding-top: 120px;
+    padding-bottom:60px ;
+    background: url("../images/columns.jpg") center, no-repeat;
+
+    @media @notebook{
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+
+    @media @tablet{
+        padding-top: 100px;
+        
+    }
+
+    @media @mobile{
+        padding-top: 50px;
+    }
+}
+
+.pros__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: 'Bebas Neue';
+    color:#212f3d;
+}
+
+.pros__inner{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media @tablet{
+       margin-top: 50px;
+    }
+
+    @media @mobile{
+        margin-top: 30px;
+    }
+    
+}
+
+.pros__item{
+    width: 25%;
+    margin-bottom: 85px;
+
+    @media @tablet{
+        width: 33.33333%;
+        margin-bottom: 60px;
+    }
+
+    @media @mobile{
+        width: 50%;
+    }
+
+    @media @mobile-sm{
+        width: 100%;
+    }
+
+}
+
+.pros__item-header{
+    display: block;
+    text-align: center;
+}
+
+
+.pros__img{
+    max-width: 100%;
+    height: auto;
+}
+
+.pros__info{
+    margin-top: 40px;
+
+    text-align: center;
+    color: #212f3d;
+    font-size: 20px;
+    font-family: 'Avenir Next Cyr Medium';
+}

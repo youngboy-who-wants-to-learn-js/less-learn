@@ -1,0 +1,623 @@
+body {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url('../fonts/AvenirNextCyr-Regular.eot');
+  src: url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextCyr-Regular.woff') format('woff'), url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr Medium';
+  src: url('../fonts/AvenirNextCyr-Medium.eot');
+  src: url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextCyr-Medium.woff') format('woff'), url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/bebasneuebold.woff') format('woff'), url('../fonts/bebasneuebold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  min-height: 768px;
+  background: url("../images/backgr.jpg") center, no-repeat;
+  background-size: cover;
+  padding-top: 35px;
+}
+@media (max-width:1199px) {
+  .header {
+    height: 0;
+  }
+}
+@media (max-width:565px) {
+  .header {
+    min-height: 600px;
+  }
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.header__left {
+  display: flex;
+  align-content: center;
+}
+.header__left-name {
+  margin-right: 40px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Avenir Next Cyr Medium';
+}
+@media (max-width:767px) {
+  .header__left-name {
+    font-size: 20px;
+  }
+}
+.header__left-prof {
+  margin-left: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Avenir Next Cyr Regular';
+  position: relative;
+}
+.header__left-prof:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #475967;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  z-index: 1;
+}
+@media (max-width:767px) {
+  .header__left-prof {
+    display: none;
+  }
+}
+.header__nav {
+  display: flex;
+  font-size: 20px;
+}
+.header__nav-link {
+  text-decoration: none;
+  font-family: 'Avenir Next Cyr Medium';
+  color: #fff;
+  margin-right: 25px;
+}
+.header__nav-link:first-child {
+  margin-right: 40px;
+}
+@media (max-width:991px) {
+  .header__nav-link:first-child {
+    display: none;
+  }
+}
+.header__nav-img {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.intro {
+  width: 100%;
+}
+.intro__inner {
+  width: 100%;
+  max-width: 655px;
+  padding-top: 200px;
+}
+@media (max-width:1199px) {
+  .intro__inner {
+    padding-top: 100px ;
+  }
+}
+.intro__title {
+  color: #fff;
+  font-size: 106px;
+  font-family: 'Bebas Neue';
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  line-height: 1.038;
+}
+@media (max-width:1199px) {
+  .intro__title {
+    font-size: 80px;
+  }
+}
+@media (max-width:991px) {
+  .intro__title {
+    font-size: 60px;
+  }
+}
+@media (max-width:565px) {
+  .intro__title {
+    font-size: 40px;
+  }
+}
+.intro__subtitle {
+  margin: 40px 0 80px;
+  color: #fff;
+  font-size: 27px;
+  font-family: 'Avenir Next Cyr Medium';
+}
+@media (max-width:1199px) {
+  .intro__subtitle {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width:767px) {
+  .intro__subtitle {
+    font-size: 20px;
+  }
+}
+.btn {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Avenir Next Cyr Medium';
+  color: #fff;
+  font-size: 18px;
+  padding: 30px 55px;
+  max-width: 320px;
+  background: linear-gradient(-29deg, #48d7bb 0%, #0eb595 100%);
+  box-shadow: 0px 12px 43px 0px rgba(35, 220, 184, 0.31);
+  border-radius: 35px;
+  transition: transform 0.2s linear;
+}
+.btn:hover {
+  transform: translateY(-10px);
+}
+@media (max-width:767px) {
+  .btn {
+    padding: 20px 45px;
+    font-size: 12px;
+    max-width: 240px;
+  }
+}
+.pros__bg {
+  padding-top: 120px;
+  padding-bottom: 60px ;
+  background: url("../images/columns.jpg") center, no-repeat;
+}
+@media (max-width:1199px) {
+  .pros__bg {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width:991px) {
+  .pros__bg {
+    padding-top: 100px;
+  }
+}
+@media (max-width:767px) {
+  .pros__bg {
+    padding-top: 50px;
+  }
+}
+.pros__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-family: 'Bebas Neue';
+  color: #212f3d;
+}
+.pros__inner {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width:991px) {
+  .pros__inner {
+    margin-top: 50px;
+  }
+}
+@media (max-width:767px) {
+  .pros__inner {
+    margin-top: 30px;
+  }
+}
+.pros__item {
+  width: 25%;
+  margin-bottom: 85px;
+}
+@media (max-width:991px) {
+  .pros__item {
+    width: 33.33333%;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width:767px) {
+  .pros__item {
+    width: 50%;
+  }
+}
+@media (max-width:565px) {
+  .pros__item {
+    width: 100%;
+  }
+}
+.pros__item-header {
+  display: block;
+  text-align: center;
+}
+.pros__img {
+  max-width: 100%;
+  height: auto;
+}
+.pros__info {
+  margin-top: 40px;
+  text-align: center;
+  color: #212f3d;
+  font-size: 20px;
+  font-family: 'Avenir Next Cyr Medium';
+}
+.about__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__left {
+  width: 50%;
+  position: relative;
+}
+@media (max-width:1199px) {
+  .about__left {
+    width: 60%;
+  }
+}
+@media (max-width:991px) {
+  .about__left {
+    width: 100%;
+  }
+}
+.about__left-img {
+  display: block;
+  bottom: 0;
+  left: -127px;
+  position: absolute;
+  z-index: 1;
+}
+@media (max-width:1199px) {
+  .about__left-img {
+    left: -60px;
+  }
+}
+@media (max-width:991px) {
+  .about__left-img {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media (max-width:767px) {
+  .about__left-img {
+    height: 300px;
+  }
+}
+.about__right {
+  width: 50%;
+  margin-top: 110px ;
+  padding: 0 115px 135px 10px;
+}
+@media (max-width:1199px) {
+  .about__right {
+    padding-right: 50px;
+    width: 40%;
+  }
+}
+@media (max-width:991px) {
+  .about__right {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width:767px) {
+  .about__right {
+    padding-right: 0;
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width:565px) {
+  .about__right {
+    padding-left: 0;
+  }
+}
+.about__right-title {
+  font-family: 'Bebas Neue';
+  font-size: 48px;
+  color: #212f3d;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+@media (max-width:1199px) {
+  .about__right-title {
+    font-size: 48px;
+  }
+}
+@media (max-width:565px) {
+  .about__right-title {
+    font-size: 40px;
+  }
+}
+.about__right-info {
+  margin: 50px 0 80px;
+  font-size: 20px;
+  font-family: 'Avenir Next Cyr Medium';
+  color: #212f3d;
+  line-height: 25px;
+}
+@media (max-width:991px) {
+  .about__right-info {
+    margin: 30px 0 50px;
+  }
+}
+@media (max-width:767px) {
+  .about__right-info {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width:565px) {
+  .about__right-info {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+.about-btn {
+  text-decoration: none;
+  color: #28c4a6;
+  font-size: 20px;
+  font-family: 'Avenir Next Cyr Medium';
+  text-transform: uppercase;
+  padding: 20px 46px;
+  border: 2px ;
+  border-style: solid;
+  border-color: linear-gradient(to right, #48d7bb, #0eb595);
+  border-radius: 35px ;
+  transition: border-style 0.2s linear;
+}
+.about-btn:hover {
+  border-style: dotted;
+}
+@media (max-width:767px) {
+  .about-btn {
+    font-size: 15px;
+    padding: 15px 35px;
+  }
+}
+.signup {
+  padding-top: 110px;
+  padding-bottom: 35px;
+  background: url("../images/columns.jpg") center, no-repeat;
+}
+@media (max-width:767px) {
+  .signup {
+    padding-top: 30px;
+  }
+}
+.signup__header {
+  text-align: center;
+}
+.signup__title {
+  color: #212f3d;
+  font-size: 48px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+@media (max-width:767px) {
+  .signup__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+}
+.signup__subtitle {
+  font-family: 'Avenir Next Cyr Medium';
+  font-size: 20px;
+  color: #212f3d;
+  margin-bottom: 65px;
+}
+@media (max-width:767px) {
+  .signup__subtitle {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+}
+.signup__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.signup__input {
+  margin-right: 25px;
+  width: 100%;
+  max-width: 360px;
+  height: 65px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Avenir Next Cyr Regular';
+  color: #6e837f;
+}
+.signup__input:last-child {
+  margin-right: 0;
+}
+@media (max-width:991px) {
+  .signup__input {
+    max-width: 300px;
+  }
+}
+@media (max-width:767px) {
+  .signup__input {
+    margin-bottom: 20px;
+    margin-right: 0;
+    height: 50px;
+  }
+}
+@media (max-width:565px) {
+  .signup__input {
+    max-width: 250px;
+  }
+}
+.signup__info {
+  color: #788a86;
+  font-size: 14px;
+  font-family: 'Avenir Next Cyr Regular';
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.signup__info span {
+  text-decoration: underline;
+}
+.signup__helper {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  margin-top: 60px;
+  width: 100%;
+  background: url("../images/people.png") center, no-repeat;
+  background-size: cover;
+}
+@media (max-width:991px) {
+  .footer {
+    margin-top: 10px;
+  }
+}
+.footer__inner {
+  padding-top: 150px;
+  text-align: center;
+}
+@media (max-width:767px) {
+  .footer__inner {
+    padding-top: 75px;
+  }
+}
+.footer__title {
+  font-family: 'Bebas Neue';
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: 0.075em;
+}
+@media (max-width:565px) {
+  .footer__title {
+    font-size: 35px;
+  }
+}
+.footer__social {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:767px) {
+  .footer__social {
+    margin-top: 35px;
+  }
+}
+.footer__link {
+  margin-right: 70px;
+  padding: 27px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: border-color 0.2s linear;
+}
+.footer__link:nth-child(2) {
+  padding: 27px 27px 25px 27px;
+}
+.footer__link:nth-child(3) {
+  padding: 27px 32px 27px 32px;
+}
+.footer__link:nth-child(4) {
+  margin-right: 0;
+}
+.footer__link:hover {
+  border-color: #5d656f;
+}
+@media (max-width:767px) {
+  .footer__link {
+    margin-right: 40px;
+  }
+}
+@media (max-width:565px) {
+  .footer__link {
+    border: none;
+    border-radius: 0;
+    margin-right: 30px;
+    padding: 0;
+  }
+  .footer__link:nth-child(2) {
+    padding: 0;
+  }
+  .footer__link:nth-child(3) {
+    padding: 0;
+  }
+}
+.footer__copyright {
+  padding-top: 480px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.copyright__left {
+  font-family: 'Avenir Next Cyr Medium';
+  font-size: 20px;
+  color: #5d656f;
+  opacity: 0.3;
+}
+@media (max-width:767px) {
+  .copyright__left {
+    font-size: 15px;
+  }
+}
+.copyright__right {
+  font-family: 'Avenir Next Cyr Medium';
+  font-size: 20px;
+  color: #5d656f;
+  opacity: 0.3;
+}
+@media (max-width:767px) {
+  .copyright__right {
+    font-size: 15px;
+  }
+}

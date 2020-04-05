@@ -1,0 +1,107 @@
+//main : ../style.css
+
+.header{
+width: 100%;
+height: 100vh;
+min-height: 768px;
+
+background: url("../images/backgr.jpg") center, no-repeat;
+background-size: cover;
+
+padding-top: 35px;
+
+@media @notebook{
+    height: 0;
+}
+
+@media @mobile-sm{
+    min-height: 600px;
+}
+
+
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header__left{
+    display: flex;
+    align-content: center;
+    
+}
+
+.header__left-name{
+    margin-right: 40px;
+    color:#fff;
+    font-size: 26px;
+    font-family: 'Avenir Next Cyr Medium';
+
+    @media @mobile{
+        font-size: 20px;
+    }
+}
+
+.header__left-prof{
+    margin-left: 40px;
+
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Regular';
+
+    position: relative;
+    
+    &:before{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 30px;
+        background-color: #475967;
+
+        position: absolute;
+        top: 0;
+        left: -40px;
+        z-index: 1;
+    }
+
+    @media @mobile{
+        display: none;
+    }
+}
+
+
+.header__nav{
+    display: flex;
+    font-size: 20px;
+    
+}
+
+.header__nav-link{
+    text-decoration:none;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #fff;
+    margin-right: 25px;
+
+    &:first-child{
+        margin-right: 40px;
+    }
+
+    @media @tablet{
+        &:first-child{
+            display: none;
+        }
+    }
+    
+}
+
+.header__nav-img{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    
+}
+
+
+

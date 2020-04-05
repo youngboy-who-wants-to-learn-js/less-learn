@@ -1,0 +1,31 @@
+//main : ../style.css
+
+.btn{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #fff;
+    font-size: 18px;
+
+    padding: 30px 55px;
+    max-width: 320px;
+
+    background:linear-gradient( -29deg, rgb(72,215,187) 0%, rgb(14,181,149) 100%);
+     box-shadow: 0px 12px 43px 0px rgba(35, 220, 184, 0.31);
+     border-radius: 35px;
+
+     transition: transform .2s linear;
+
+     &:hover{
+         transform: translateY(-10px);
+     }
+
+     @media @mobile{
+         padding: 20px 45px;
+         font-size: 12px;
+         max-width: 240px;
+     }
+     
+}
